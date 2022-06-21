@@ -1,0 +1,68 @@
+.profile {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.description {
+    width: 364px;
+    background-color:lightgray;
+    text-align: center;
+    border: 1px solid darkgrey;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+.avatar {
+    width: 150px;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: rgb(204, 255, 210);
+}
+
+.stats {
+    background-color:gainsboro;
+    display: flex;
+    flex-direction: row;
+}
+
+.stats li {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid darkgrey;
+}
+
+.quantity {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.label {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.location {
+    font-weight: 600;
+    color:cadetblue;
+    font-style: italic;
+}
+
+.tag {
+    font-size: 18px;
+}
