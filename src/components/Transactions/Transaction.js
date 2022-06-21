@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import css from "./Transactions.module.css";
 
 function Transaction({ id, type, amount, currency }) {
   return(
@@ -20,7 +19,7 @@ Transaction.propTypes = {
     type: PropTypes.string,
     id: PropTypes.string,
     currency: PropTypes.string,
-    amount: PropTypes.number,
+    amount: PropTypes.string,
 };
 
 export default Transaction;
