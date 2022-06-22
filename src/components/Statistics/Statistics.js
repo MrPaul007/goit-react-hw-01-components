@@ -24,7 +24,7 @@ function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    items: PropTypes.arrayOf(
+    stats: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string.isRequired,
       }),
