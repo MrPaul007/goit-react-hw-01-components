@@ -12,7 +12,7 @@ function Statistics({ title, stats }) {
         <ul className={css.statList}>
             {stats.map(stat => (  
                 <Statistic 
-                    id = {stat.id}
+                    key= {stat.id}
                     label = {stat.label}
                     percentage = {stat.percentage}
                 />
@@ -20,13 +20,15 @@ function Statistics({ title, stats }) {
         </ul>
     </section>
     );
-}
+};
 
 Statistics.propTypes = {
     title: PropTypes.string,
     stats: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string.isRequired,
+        label: PropTypes.string,
+        percentage: PropTypes.number
       }),
     ),
   };

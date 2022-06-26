@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-function Transaction({ id, type, amount, currency }) {
+function Transaction({ type, amount, currency }) {
   return(
-    <tr key={id}>
+    <tr>
         <td>{type}</td>
         <td>{amount}</td>
         <td>{currency}</td>
@@ -10,14 +10,8 @@ function Transaction({ id, type, amount, currency }) {
   )   
 }
 
-Transaction.defaultProps = {
-    type: "type",
-    amount: 0,
-    currency: "curency",
-};
 Transaction.propTypes = {
     type: PropTypes.string,
-    id: PropTypes.string,
     currency: PropTypes.string,
     amount: PropTypes.string,
 };

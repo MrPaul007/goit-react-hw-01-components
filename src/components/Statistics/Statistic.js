@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import css from './Statistics.module.css'
 
-function Statisic({ id, label, percentage }) {
+function Statisic({ label, percentage }) {
   const randomColor = () => {
     let random1 = Math.round(Math.random() * 255);
     let random2 = Math.round(Math.random() * 255);
@@ -10,7 +10,7 @@ function Statisic({ id, label, percentage }) {
   };  
   
   return(
-      <li key={id} className={css.item} style={{
+      <li className={css.item} style={{
         backgroundColor:randomColor(),
       }}>
         <span className={css.label}>{label}</span>
@@ -24,7 +24,7 @@ Statisic.defaultProps = {
 };
   
 Statisic.propTypes = {
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   percentage: PropTypes.number,
 };
   

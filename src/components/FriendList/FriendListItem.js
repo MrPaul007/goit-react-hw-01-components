@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import css from "./FriendList.module.css";
 
-function Friend({ avatar, name, isOnline, id }) {
+function Friend({ avatar, name, isOnline }) {
   return(
-    <li key={id} className={css.item}>
+    <li className={css.item}>
         <span className={css.status} style={{
         backgroundColor:isOnline?"green":"red",
         }}></span>
@@ -14,14 +14,11 @@ function Friend({ avatar, name, isOnline, id }) {
 }
 
 Friend.defaultProps = {
-    percentage: 0,
-    isOnline: false,
     avatar: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
 };
   
 Friend.propTypes = {
-    name: PropTypes.string,
-    id: PropTypes.number,
+  name: PropTypes.string,
   avatar: PropTypes.string,
   isOnline: PropTypes.bool,
 };

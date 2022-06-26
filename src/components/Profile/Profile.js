@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import css from './Profile.module.css'
 import defaultAvatar from "../../img/default-avatar.png";
 
-function Profile({ item }) {
-    const {avatar, username, tag, location, stats} = item;
+function Profile({avatar, username, tag, location, stats}) {
+    // const {avatar, username, tag, location, stats} = item;
     const {followers, views, likes} = stats;
     return (
       <div className={css.profile}>
@@ -38,12 +38,6 @@ function Profile({ item }) {
 
 Profile.defaultProps = {
   avatar: defaultAvatar,
-    username: 'username',
-    tag: 'tag',
-    location: 'location',
-  followers: 0,
-  views: 0,
-  likes: 0,
 };
 
 Profile.propTypes = {
@@ -53,7 +47,7 @@ Profile.propTypes = {
     location: PropTypes.string,
     followers: PropTypes.number,
     views: PropTypes.number,
-    likes: PropTypes.number,
+    likes: PropTypes.number
 };
   
 export default Profile;

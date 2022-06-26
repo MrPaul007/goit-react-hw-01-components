@@ -19,7 +19,7 @@ function Transactions({ items }) {
                 currency = {item.currency}
                  amount = {item.amount}
                  type = {item.type}
-                 id = {item.id}
+                 key = {item.id}
                 />
             ))} 
           </tbody>
@@ -31,6 +31,9 @@ Transactions.propTypes = {
     items: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string.isRequired,
+        currency: PropTypes.string,
+        amount: PropTypes.string,
+        type: PropTypes.string
       }),
     ),
   };
