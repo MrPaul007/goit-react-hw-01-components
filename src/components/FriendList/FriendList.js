@@ -17,6 +17,10 @@ function FriendList({ friends }) {
     );
 }
 
+FriendList.defaultProps = {
+  friends: [],
+};
+
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
       PropTypes.shape({

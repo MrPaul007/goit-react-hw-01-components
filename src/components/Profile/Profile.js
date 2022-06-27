@@ -3,7 +3,6 @@ import css from './Profile.module.css'
 import defaultAvatar from "../../img/default-avatar.png";
 
 function Profile({avatar, username, tag, location, stats}) {
-    // const {avatar, username, tag, location, stats} = item;
     const {followers, views, likes} = stats;
     return (
       <div className={css.profile}>
@@ -45,9 +44,6 @@ Profile.propTypes = {
     username: PropTypes.string,
     tag: PropTypes.string,
     location: PropTypes.string,
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number
+    stats: PropTypes.objectOf(PropTypes.number),
 };
-  
 export default Profile;

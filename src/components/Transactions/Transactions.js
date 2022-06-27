@@ -27,6 +27,11 @@ function Transactions({ items }) {
     );
 }
 
+Transactions.defaultProps = {
+  items: []
+};
+
+
 Transactions.propTypes = {
     items: PropTypes.arrayOf(
       PropTypes.shape({
@@ -39,6 +44,3 @@ Transactions.propTypes = {
   };
 
 export default Transactions;
-
-
-
