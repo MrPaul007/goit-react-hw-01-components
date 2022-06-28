@@ -36,9 +36,9 @@ Transactions.propTypes = {
     items: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string.isRequired,
-        currency: PropTypes.string,
-        amount: PropTypes.string,
-        type: PropTypes.string
+        currency: PropTypes.string.isRequired,
+        amount: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired
       }),
     ),
   };

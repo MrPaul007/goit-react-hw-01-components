@@ -11,9 +11,9 @@ function Transaction({ type, amount, currency }) {
 }
 
 Transaction.propTypes = {
-    type: PropTypes.string,
-    currency: PropTypes.string,
-    amount: PropTypes.string,
+    type: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired
 };
 
 export default Transaction;
